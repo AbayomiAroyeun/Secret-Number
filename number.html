@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Number Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+
+<body>
+    <div id="container" class="myborder">
+        <div id="text" class="blinkingText"> Welcome!</div>
+        <div id="text2">
+            <p>This App will reveal the number you chose secretly. Just answer 3 - 4 questions and ensure your entries
+                are correct. </p>
+        </div>
+
+    <div id="border" class="image">
+        <p>Is the number an even number or odd number?</p>
+        <input type="text" id="category" placeholder="Enter 'even' or 'odd'">
+        <button id="startbutton" onclick="startGame()">Start</button>
+        <div id="result"></div>
+    </div>
+    </div>
+
+    <script src="questions.js"></script>
+
+</body>
+
+</html>
