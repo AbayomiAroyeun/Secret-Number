@@ -1,0 +1,116 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Use viewport height for full height */
+}
+
+#border {
+    width: 500px;
+    height: 350px;
+    position: relative;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.myborder {
+    border: 4px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 5pc;
+    background-color: rgb(60, 229, 229);
+}
+
+.image {
+    background-image: url(pics/myhead.jpg);
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    opacity: 0.5;
+    border-style: solid;
+    border-color: green;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#text {
+    color: yellow;
+    text-align: center;
+    font: 2em sans-serif;
+    font-size: xx-large;
+    margin-top: 40px;
+    font-weight: bolder;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.blinkingText {
+    animation: blink 8s infinite;
+    animation-direction: reverse;
+}
+
+#text2 {
+    text-align: center;
+}
+
+#startbutton {
+    color: green;
+    border: 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 20px;
+    object-position: 20px;
+    margin-right: 25%;
+}
+
+#content {
+    background-color: aliceblue;
+}
+
+#blinkingReveal {
+    -ms-zoom-animation: default;
+}
+
+#text3 {
+    text-align: center;
+    color: darkred;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-stretch: expanded;
+}
+
+#question {
+    text-align: center;
+    margin-left: 10%;
+    color: blueviolet;
+}
+
+.answerBox {
+    text-align: center;
+    margin-top: 20px;
+    color: blueviolet;
+    -ms-text-size-adjust: 50%;
+}
+#result{
+    text-align: center;
+    margin-top: 20px;
+    color: red;
+}
